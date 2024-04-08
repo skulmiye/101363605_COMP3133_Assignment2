@@ -1,0 +1,17 @@
+<mat-card-header style="display: flex; justify-content: center;">
+  <mat-card-title><h2>View Employee Details</h2></mat-card-title>
+</mat-card-header>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-content>
+      <div *ngIf="employee">
+        <p><strong>First Name:</strong> {{ employee.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ employee.last_name }}</p>
+        <p><strong>Email:</strong> {{ employee.email }}</p>
+        <p><strong>Gender:</strong> {{ employee.gender }}</p>
+        <p><strong>Salary:</strong> {{ employee.salary }}</p>
+        <button mat-raised-button color="primary" (click)="backToEmployeeList()">Back to Employee List</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,31 @@
+<style>
+  main {
+    width: 0;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 0;
+    }
+</style>
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <app-header></app-header>
+    </div>
+  
+  </div>
+</main>
+
+<router-outlet />

@@ -1,0 +1,47 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-title style="display: flex; justify-content: center;">
+      <h2>Update Employee</h2>
+    </mat-card-title>
+    <form (ngSubmit)="updateEmployee()" #employeeForm="ngForm">
+      <div class="form-field-wrapper">
+        <mat-form-field class="form-field">
+          <mat-label>First Name:</mat-label>
+          <input matInput type="text" id="firstName" name="firstName" [(ngModel)]="updatedEmployee.first_name" required>
+        </mat-form-field>
+      </div>
+      <div class="form-field-wrapper">
+        <mat-form-field class="form-field">
+          <mat-label>Last Name:</mat-label>
+          <input matInput type="text" id="lastName" name="lastName" [(ngModel)]="updatedEmployee.last_name" required>
+        </mat-form-field>
+      </div>
+      <div class="form-field-wrapper">
+        <mat-form-field class="form-field">
+          <mat-label>Email:</mat-label>
+          <input matInput type="email" id="email" name="email" [(ngModel)]="updatedEmployee.email" required>
+        </mat-form-field>
+      </div>
+      <div class="form-field-wrapper">
+        <mat-form-field class="form-field">
+          <mat-label>Gender:</mat-label>
+          <mat-select id="gender" name="gender" [(ngModel)]="updatedEmployee.gender" required>
+            <mat-option value="Female">Female</mat-option>
+            <mat-option value="Male">Male</mat-option>
+            <mat-option value="Other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="form-field-wrapper">
+        <mat-form-field class="form-field">
+          <mat-label>Salary:</mat-label>
+          <input matInput type="number" id="salary" name="salary" [(ngModel)]="updatedEmployee.salary" required>
+        </mat-form-field>
+      </div>
+      <div class="button-container">
+        <button mat-raised-button type="submit" [disabled]="!employeeForm.valid">Update</button>
+        <button mat-raised-button (click)="cancel()">Cancel</button>
+      </div>      
+    </form>
+  </mat-card>
+</div>

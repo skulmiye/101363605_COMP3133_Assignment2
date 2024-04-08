@@ -1,0 +1,19 @@
+.card {
+    width: 400px; 
+    margin: 0 auto; 
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  

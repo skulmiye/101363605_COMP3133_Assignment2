@@ -1,0 +1,36 @@
+.container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 80vh;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-field-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-field {
+    width: 80%;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; 
+  }
+  
+  .button-container button {
+    margin: 0px 8px 8px;
+  }
+  
+  
