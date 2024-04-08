@@ -9,4 +9,4 @@ Backend application using NodeJS, Express, GraphQL and MongoDB, and a Frontend a
 
 ## Login
 -   user: user1
--   password: 1
+-   password: user1
